@@ -1,9 +1,12 @@
 "use client"
 
+import { useState } from "react"
 import Image from "next/image"
 import { Section } from "@/components/section"
 
 export function Registry() {
+  const [selectedQR, setSelectedQR] = useState<"gcash" | "gsave">("gcash")
+
   return (
     <Section
       id="registry"
@@ -38,15 +41,39 @@ export function Registry() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#324D3E]/20 via-transparent to-[#8EA58B]/10 pointer-events-none" />
 
           <div className="relative z-10 flex flex-col items-center justify-center">
+            {/* Toggle Buttons */}
+            <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+              <button
+                onClick={() => setSelectedQR("gcash")}
+                className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ${
+                  selectedQR === "gcash"
+                    ? "bg-[#324D3E] text-white shadow-md scale-105"
+                    : "bg-white/80 text-[#324D3E] hover:bg-white/90 border border-[#324D3E]/40"
+                }`}
+              >
+                GCash
+              </button>
+              <button
+                onClick={() => setSelectedQR("gsave")}
+                className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ${
+                  selectedQR === "gsave"
+                    ? "bg-[#324D3E] text-white shadow-md scale-105"
+                    : "bg-white/80 text-[#324D3E] hover:bg-white/90 border border-[#324D3E]/40"
+                }`}
+              >
+                GSave
+              </button>
+            </div>
+
             <div className="relative bg-white/95 rounded-xl sm:rounded-2xl border-2 border-dashed border-[#324D3E]/40 p-5 sm:p-6 md:p-8 text-center shadow-[0_6px_24px_rgba(50,77,62,0.15)] max-w-md">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#BCCFC0] px-3 py-1 rounded-full shadow-sm border-2 border-[#324D3E]/50 text-xs font-semibold tracking-[0.2em] text-[#324D3E] uppercase">
-                GCash:
+                {selectedQR === "gcash" ? "GCash:" : "GSave:"}
               </div>
               <div className="flex flex-col items-center gap-4 w-full mt-4">
                 <div className="w-56 h-56 sm:w-64 sm:h-64 border-2 border-dashed border-[#324D3E]/40 rounded-xl sm:rounded-2xl flex items-center justify-center bg-white relative overflow-hidden">
                   <Image
-                    src="/QR/monogram.png"
-                    alt="GCash QR code"
+                    src={selectedQR === "gcash" ? "/QR/Gcash.png" : "/QR/GSAVE.png"}
+                    alt={selectedQR === "gcash" ? "GCash QR code" : "GSave QR code"}
                     fill
                     sizes="256px"
                     className="object-contain p-4"
