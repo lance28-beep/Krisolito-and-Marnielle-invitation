@@ -25,7 +25,7 @@ export const siteConfig = {
     day: "Sunday",
     time: "8:30 AM",
     entourageTime: "8:00 AM",
-    guestsTime: "7:30 AM",
+    guestsTime: "8:00 AM",
   },
   reception: {
     location: "Katihan Eco Park",

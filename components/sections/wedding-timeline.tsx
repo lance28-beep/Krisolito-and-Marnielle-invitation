@@ -74,14 +74,6 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/cakecutting.png",
   },
   {
-    time: "1:00 PM",
-    title: "Dance & Celebration",
-    description: "Let's dance and celebrate! Join us on the dance floor for music and merriment.",
-    location: receptionVenue,
-    icon: DanceIcon,
-    imageSrc: "/weddingtimeline/dance.png",
-  },
-  {
     time: "2:30 PM",
     title: "Send-off",
     description: `Help us send off ${groomNickname} & ${brideNickname} with love and well-wishes as they begin their new journey together.`,

@@ -20,7 +20,7 @@ const faqItems: FAQItem[] = [
   {
     question: "When is the wedding?",
     answer:
-      `Our wedding will be held on ${siteConfig.ceremony.date} (${siteConfig.ceremony.day}) at 8:00 PM. We kindly ask guests to arrive by 7:30 PM to help us begin promptly.`,
+      `Our wedding will be held on ${siteConfig.ceremony.date} (${siteConfig.ceremony.day}) at 8:30 AM. We kindly ask guests to arrive by 8:00 AM to help us begin promptly.`,
   },
   {
     question: "Where will the ceremony and reception take place?",
@@ -30,7 +30,7 @@ const faqItems: FAQItem[] = [
   {
     question: "What time should I arrive?",
     answer:
-      `Kindly arrive by 7:30 PM so we can begin the ceremony promptly at exactly 8:00 PM. Your punctuality means so much to us — and don't forget to have a light snack beforehand so you can enjoy the celebration comfortably!`,
+      `Kindly arrive by 8:00 AM so we can begin the ceremony promptly at exactly 8:30 AM. Your punctuality means so much to us — and don't forget to have a light snack beforehand so you can enjoy the celebration comfortably!`,
   },
   {
     question: "How do I RSVP?",
