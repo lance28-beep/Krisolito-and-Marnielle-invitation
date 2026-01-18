@@ -184,19 +184,19 @@ export function Entourage() {
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
       <div
-        className={`relative flex flex-col ${containerAlign} justify-center py-0.5 sm:py-1 md:py-1 leading-snug sm:leading-snug group/item transition-all duration-300 hover:scale-[1.02] sm:hover:scale-[1.03]`}
+        className={`relative flex flex-col ${containerAlign} max-[349px]:items-center justify-center py-0.5 sm:py-1 md:py-1 leading-snug sm:leading-snug group/item transition-all duration-300 hover:scale-[1.02] sm:hover:scale-[1.03]`}
       >
         {/* Hover highlight effect */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#738A6E]/20 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 rounded-md" />
 
         <p
-          className={`relative text-[#738A6E] text-[11px] sm:text-[13px] md:text-sm lg:text-base font-semibold ${textAlign} group-hover/item:text-[#738A6E] transition-all duration-300`}
+          className={`relative text-[#738A6E] text-[11px] sm:text-[13px] md:text-sm lg:text-base font-semibold ${textAlign} max-[349px]:!text-center group-hover/item:text-[#738A6E] transition-all duration-300`}
         >
           {member.Name}
         </p>
         {showRole && member.RoleTitle && (
           <p
-            className={`relative text-[#738A6E]/70 text-[9px] sm:text-[10px] md:text-[10px] lg:text-xs font-medium mt-0 leading-tight ${textAlign} tracking-wide uppercase group-hover/item:text-[#738A6E] transition-colors duration-300`}
+            className={`relative text-[#738A6E]/70 text-[9px] sm:text-[10px] md:text-[10px] lg:text-xs font-medium mt-0 leading-tight ${textAlign} max-[349px]:!text-center tracking-wide uppercase group-hover/item:text-[#738A6E] transition-colors duration-300`}
           >
             {member.RoleTitle}
           </p>
@@ -223,7 +223,7 @@ export function Entourage() {
       return (
         <div className="mb-2 sm:mb-2.5 md:mb-3">
           <SectionTitle>{singleTitle}</SectionTitle>
-          <div className={`grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-0.5 sm:gap-y-1 md:gap-y-1 ${centerContent ? 'max-w-2xl mx-auto' : ''}`}>
+          <div className={`grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-0.5 sm:gap-y-1 md:gap-y-1 max-[349px]:justify-items-center ${centerContent ? 'max-w-2xl mx-auto' : ''}`}>
             {children}
           </div>
         </div>
@@ -232,15 +232,15 @@ export function Entourage() {
 
     return (
       <div className="mb-2 sm:mb-2.5 md:mb-3">
-        <div className="grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-8 sm:gap-x-12 md:gap-x-16 mb-2 sm:mb-2.5 md:mb-3">
+        <div className="grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-8 sm:gap-x-12 md:gap-x-16 mb-2 sm:mb-2.5 md:mb-3 max-[349px]:justify-items-center">
           {leftTitle && (
-            <SectionTitle align="right" className="pr-2 sm:pr-3 md:pr-4">{leftTitle}</SectionTitle>
+            <SectionTitle align="right" className="pr-2 sm:pr-3 md:pr-4 max-[349px]:!text-center max-[349px]:pr-0">{leftTitle}</SectionTitle>
           )}
           {rightTitle && (
-            <SectionTitle align="left" className="pl-2 sm:pl-3 md:pl-4">{rightTitle}</SectionTitle>
+            <SectionTitle align="left" className="pl-2 sm:pl-3 md:pl-4 max-[349px]:!text-center max-[349px]:pl-0">{rightTitle}</SectionTitle>
           )}
         </div>
-        <div className={`grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-0.5 sm:gap-y-1 md:gap-y-1 ${centerContent ? 'max-w-2xl mx-auto' : ''}`}>
+        <div className={`grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-0.5 sm:gap-y-1 md:gap-y-1 max-[349px]:justify-items-center ${centerContent ? 'max-w-2xl mx-auto' : ''}`}>
           {children}
         </div>
       </div>
@@ -651,7 +651,7 @@ export function Entourage() {
                             <div className="w-full max-w-md h-px bg-gradient-to-r from-transparent via-[#738A6E]/30 to-transparent"></div>
                           </div>
                         )}
-                        <TwoColumnLayout leftTitle="Matron of Honor" rightTitle="Best Man">
+                        <TwoColumnLayout leftTitle="Maid of Honor" rightTitle="Best Man">
                           {(() => {
                             const maxLen = Math.max(bestMan.length, maidOfHonor.length)
                             const rows = []

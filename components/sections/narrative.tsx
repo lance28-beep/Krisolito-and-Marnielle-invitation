@@ -145,7 +145,8 @@ export function Narrative() {
                   cardsData={[
                     { id: 1, img: "/mobile-background/couple (1).webp" },             
                     { id: 2, img: "/mobile-background/couple (2).webp" },
-                    { id: 3, img: "/mobile-background/couple (3).webp" },      
+                    { id: 3, img: "/mobile-background/couple (3).webp" },   
+                    { id: 4, img: "/Couple_img/image.jpg" },
                   ]}
                   animationConfig={{ stiffness: 260, damping: 20 }}
                 />

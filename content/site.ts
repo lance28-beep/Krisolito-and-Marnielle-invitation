@@ -8,19 +8,19 @@ export const siteConfig = {
   wedding: {
     date: "FEBRUARY 15, 2026",
     time: "8:30 AM",
-    venue: "Kibalbag Seventh-Day Adventist Church",
+    venue: "Kibalabag Seventh-Day Adventist Church",
     tagline: "are getting married!",
     theme: "Modern Filipiniana",
     motif: "#87AE73, #9CAF88, #F5F5DC, #E6D5B8, #D2B48C",
   },
   details: {
     rsvp: {
-      deadline: "January 31, 2026",
+      deadline: "January 20, 2026",
     },
   },
   ceremony: {
-    location: "Kibalbag Seventh-Day Adventist Church",
-    venue: "Kibalbag Seventh-Day Adventist Church",
+    location: "Kibalabag Seventh-Day Adventist Church",
+    venue: "Kibalabag Seventh-Day Adventist Church",
     date: "February 15 2026",
     day: "Sunday",
     time: "8:30 AM",
