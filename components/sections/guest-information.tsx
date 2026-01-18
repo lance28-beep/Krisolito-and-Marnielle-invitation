@@ -222,7 +222,7 @@ export function GuestInformation() {
                   </h4>
                   <div className="space-y-2 sm:space-y-2.5">
                     <p className="text-xs sm:text-sm text-[#738A6E] leading-relaxed">
-                      Kindly arrive by <span className="font-semibold text-[#738A6E]">2:30 PM</span> so we can begin the wedding ceremony promptly at exactly <span className="font-semibold text-[#738A6E]">3:00 PM</span>.
+                      Kindly arrive by <span className="font-semibold text-[#738A6E]">7:30 PM</span> so we can begin the wedding ceremony promptly at exactly <span className="font-semibold text-[#738A6E]">8:00 PM</span>.
                     </p>
                     <p className="text-xs sm:text-sm text-[#738A6E] leading-relaxed">
                       Your punctuality means so much to us — and don&apos;t forget to have a light snack beforehand so you can enjoy the celebration comfortably!
