@@ -45,7 +45,7 @@ const faqItems: FAQItem[] = [
   {
     question: "Is there a dress code?",
     answer:
-      `Yes! We kindly request our guests to dress in formal attire matching our wedding colors. Please see the Attire section in Details for specific guidelines:\n\nNinong & Guest:\n• Barong Tagalog | Puting Panloob | Itim na Pantalon | Itim na sapatos\n\nNinang & Guest:\n• Modern Filipiniana or Traje de Mestiza\n\nWe encourage you to dress according to our wedding color to help create a soft, elegant romantic celebration.`,
+      `Yes! We kindly request our guests to dress in formal attire matching our wedding colors. Please see the Attire & Motif section in Guest Information for specific guidelines:\n\nPRINCIPAL SPONSORS:\n• Ninong: Barong - Cream/Buttercream (#F0E3C3)\n• Ninang: Long gown/Filipiniana - Light Peach (#FAD4C0) / Buttercream (#F0E3C3)\n\nCHERISHED COMPANIONS:\n• Gentlemen: Suits/long sleeves - Sage green (#8EA58C) / Light turquoise (#C4DAD2)\n• Ladies: Long gown - Sage green (#8EA58C) / Mint green (#BFCFBB)\n\nGUESTS:\n• Gentlemen: Suits/long sleeves - Sage green (#8EA58C) / Mint green (#BFCFBB) / Light turquoise (#C4DAD2)\n• Ladies: Long gown - Sage green (#8EA58C) / Mint green (#BFCFBB) / Light turquoise (#C4DAD2) / Buttercream Bliss (#FFF8BF)\n\nWe encourage you to dress according to our wedding colors to help create a soft, elegant romantic celebration.`,
   },
   {
     question: "Will there be assigned seating?",

@@ -1,14 +1,14 @@
 export const siteConfig = {
   couple: {
-    bride: "VANESSA JEAN PINO MONTERDE",
-    brideNickname: "Vanessa",
-    groom: "JOHN MARK RODRIGUEZ ROBLES",
-    groomNickname: "John",
+    bride: "MARNELLE",
+    brideNickname: "Marnielle",
+    groom: "KRISOLITO",
+    groomNickname: "Krisolito",
   },
   wedding: {
-    date: "MARCH 7, 2026",
-    time: "3:00 PM",
-    venue: "Caleruega Church",
+    date: "FEBRUARY 15, 2026",
+    time: "8:30 AM",
+    venue: "Kibalbag Seventh-Day Adventist Church",
     tagline: "are getting married!",
     theme: "Modern Filipiniana",
     motif: "#87AE73, #9CAF88, #F5F5DC, #E6D5B8, #D2B48C",
@@ -19,19 +19,19 @@ export const siteConfig = {
     },
   },
   ceremony: {
-    location: "Caleruega Church, Caleruega Rd, Brgy. Kaylaway, Batulao Nasugbu, Batangas",
-    venue: "Caleruega Church",
-    date: "March 7 2026",
-    day: "Saturday",
-    time: "3:00 PM",
-    entourageTime: "2:30 PM",
-    guestsTime: "1:30 PM",
+    location: "Kibalbag Seventh-Day Adventist Church",
+    venue: "Kibalbag Seventh-Day Adventist Church",
+    date: "February 15 2026",
+    day: "Sunday",
+    time: "8:30 AM",
+    entourageTime: "8:00 AM",
+    guestsTime: "7:30 AM",
   },
   reception: {
-    location: "Kayama Mountain Resort and Events Place, Sitio Kaytuyang, Brgy. Aga Nasugbu, Batangas",
-    venue: "Kayama Mountain Resort and Events Place",
-    date: "March 7, 2026",
-    time: "5:00 PM",
+    location: "Katihan Eco Park",
+    venue: "Katihan Eco Park",
+    date: "February 15, 2026",
+    time: "11:00 AM",
   },
   dressCode: {
     theme: "Modern Filipiniana",
@@ -46,25 +46,21 @@ export const siteConfig = {
     },
     note: "We kindly request our guests to dress in formal attire following our Modern Filipiniana theme."
   },
-  narratives: {
-    groom: `The first time Mark saw Catherine, time seemed to slow down. It was an ordinary day that instantly became unforgettable: one smile, one hello, and suddenly his world had a new center. He didn't have the perfect words ready, but he knew he had met someone who felt like home.
-
-Early conversations turned into late-night talks, sharing dreams, favorite meals, and whispered prayers for a future together. With every small adventure—coffee runs, long drives, quiet walks—Mark found himself choosing her over and over again. He loved how she laughed freely, how she listened with her whole heart, and how her faith steadied him.
-
-There were seasons of distance and long workdays, but every reunion reminded him why he stayed patient: because Catherine was worth every mile and every minute apart. When he finally knelt to ask for her hand, it wasn't a question of "if," only "when can we start forever?"`,
-    bride: `Catherine remembers the first time Mark said her name. It was gentle but sure, a kindness that made her feel both seen and safe. In that softness, she found a partner who met her with the same grace she prayed to give.
-
-Mark's steadiness won her heart: the way he showed up, even when schedules were tight, and how he always found lightness in the small things. He celebrated her wins, held space for her worries, and never hesitated to choose "us" in every decision.
-
-Now, as they prepare to say yes before God and the people they love most, Catherine is grateful for the patience, humor, and hope Mark brings to every day. She knows this next chapter is just the start of the love story they get to write together.`,
-  },
+  narrative: `Some love stories begin with a spark. Kris and Mynee’s began with faith, friendship, and God’s perfect timing.
+Written quietly over the years, their story unfolded through service in Church, seasons of waiting, miles of distance, and moments of choosing love every single day. It is a story shaped by patience, strengthened by sacrifice, and grounded in faith—one that grew not in haste, but in purpose. From shared beginnings as friends, to long travels just to spend a few precious hours together, to finding peace in nature and joy in worship side by side, every chapter has reminded them—and everyone who knows them—that when love is entrusted to God, it always finds its way home.
+Krisolito “Kris” Bacus Caliva and Marnielle “Mynee” Antiga Salig first met on October 10, 2016, as college students and co-officers of the NCMC MAS-AMiCUS Executive Committee. Kris was from the North Bukidnon District, while Mynee was from the Iligan City District of MAS-AMiCUS. At that time, Bukidnon was still part of the North Central Mindanao Conference (now, it has become the Central Mindanao Mission (CMM)). Kris served as the NEWSTART Committee Head, while Mynee was the Music Committee Head. It was in the Church, surrounded by service and shared faith, where their story quietly began.Their friendship grew naturally through years of shared ministry, teamwork, conversations, and laughter with fellow officers. Their bond was built on faith, trust, and a love for serving God, and their love was anchored in Christ—a foundation that would guide them through every season of life together.
+Years later, during Mynee’s fourth year of college, Kris began pursuing her with sincerity and patience. He courted her faithfully and waited almost two years, trusting God’s timing and choosing love that was intentional and steady. Then, on February 13, 2021, nearly five years after they first met, their friendship blossomed into a relationship they both knew was worth the wait. Just like all who walk in the Lord, their love story was not a walk in the park. They faced trials, challenges, and long seasons of waiting, especially during their years apart. For almost five years, theirs was a long-distance love—Kris living and working in Malaybalay City, Bukidnon, while Mynee lived and worked in Iligan City. Amidst the distance, prayer became their refuge, guiding them through moments of longing and uncertainty. Distance tested their patience, but it never weakened their commitment. Kris would travel two to three hours just to spend time with Mynee, choosing presence over convenience. Despite these challenges, both of them trusted God’s timing for their journey. 
+In 2024, the miles between them finally shortened when Mynee moved to work in Cagayan de Oro City—another quiet reminder that God’s plan unfolds perfectly in His time. Amid the waiting and the distance, Kris and Mynee found joy in the simplest moments—picnic dates, nature walks, and time spent under open skies. Both of them cherish dates surrounded by nature, where conversations flow easily and God’s presence feels closest. This shared love for nature is their reason for choosing a wedding solemnized in the midst of  nature.
+Then, in the quiet mountains of Kibalabag, Bukidnon, on the calm evening of December 26, 2024, encircled by close friends and the beauty of nature, Kris asked Mynee to walk with him in life as his wife. It was a simple, heartfelt moment—there was no grand setup, no elaborate decorations, just the two of them, with their friends nearby, in the middle of the  tranquil mountains. After four years of courtship, a year of engagement, Kris and Mynee are going back to the same place when Kris knelt for her hand.
+This time,  it will be for the purpose of solemnizing their matrimonial vows.
+Today, they still lovingly call each other “babi,” “babibuu,” and “love”—simple words carrying years of prayers, patience, miles traveled, and a love faithfully written by God. And now, with grateful hearts, Kris and Mynee step into forever—hand in hand, trusting the Author of their story. `,
   colors: {
     primary: "#87AE73",
     secondary: "#F5F5DC",
   },
   snapShare: {
-    googleDriveLink: "https://drive.google.com/drive/folders/1lk45T1tGmm5_Oa48ABV_Cgrnpp1T2kTk?usp=sharing",
-    hashtag: "#anJOHNnaforeverniVANESSA",
+    googleDriveLink: "https://drive.google.com/drive/folders/1ywhFJd5nG_e-0iDIPuYckVGmXNuzRevy?usp=sharing",
+    hashtag: "#KrisAndMyneeWedding",
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }

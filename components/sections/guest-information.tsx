@@ -69,59 +69,142 @@ export function GuestInformation() {
             </div>
 
             <div className="relative w-full rounded-2xl overflow-hidden border border-[#738A6E]/40 shadow-xl bg-white p-4 sm:p-6 space-y-3 sm:space-y-4">
-              <div className="text-center space-y-2 sm:space-y-3">
+              <div className="text-center space-y-2 sm:space-y-3 mb-3 sm:mb-4">
                 <p className="text-xs sm:text-sm font-semibold text-[#738A6E]">
                   {siteConfig.dressCode.note}
                 </p>
               </div>
 
-              <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#738A6E]/40 bg-white/90 mb-3">
+              <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] md:aspect-[16/10] rounded-xl overflow-hidden border-2 border-[#738A6E]/50 bg-white/95 shadow-md mb-4 sm:mb-5">
                 <Image
                   src="/Details/newguestattire.png"
                   alt="Attire guideline"
                   fill
-                  className="object-contain"
+                  className="object-contain p-2 sm:p-3"
                   sizes="(min-width: 1024px) 700px, (min-width: 640px) 600px, 100vw"
                   priority={false}
                 />
               </div>
 
               <div className="space-y-4">
+                {/* Principal Sponsors */}
                 <div>
-                  <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
-                    <div className="space-y-2">
+                  <p className="text-[10px] sm:text-xs font-semibold text-[#738A6E] uppercase tracking-wide mb-2">
+                    Principal Sponsors
+                  </p>
+                  <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm pl-2">
+                    <div className="space-y-1">
                       <p className="text-[#738A6E]">
-                        <span className="font-semibold">Ninong &amp; Guest:</span>
+                        <span className="font-semibold">Ninong:</span> Barong - Cream/Buttercream
                       </p>
-                      <p className="text-[#738A6E] pl-4">
-                        Barong Tagalog | Puting Panloob | Itim na Pantalon | Itim na sapatos
-                      </p>
+                      <div className="flex flex-wrap items-center gap-1.5 pl-4">
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#F0E3C3' }} title="#F0E3C3" />
+                        <span className="text-[10px] text-[#738A6E]/70">#F0E3C3</span>
+                      </div>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-1">
                       <p className="text-[#738A6E]">
-                        <span className="font-semibold">Ninang &amp; Guest:</span>
+                        <span className="font-semibold">Ninang:</span> Long gown/Filipiniana - Light Peach / Buttercream
                       </p>
-                      <p className="text-[#738A6E] pl-4">
-                        Modern Filipiniana or Traje de Mestiza
-                      </p>
+                      <div className="flex flex-wrap items-center gap-1.5 pl-4">
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#FAD4C0' }} title="#FAD4C0" />
+                        <span className="text-[10px] text-[#738A6E]/70">#FAD4C0</span>
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#F0E3C3' }} title="#F0E3C3" />
+                        <span className="text-[10px] text-[#738A6E]/70">#F0E3C3</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Color Palette */}
-                <div className="space-y-2 pt-2">
-                  <p className="text-[10px] sm:text-xs font-semibold text-[#738A6E] uppercase tracking-wide text-left">
-                    Sage green &amp; Beige
+                {/* Cherished Companions */}
+                <div>
+                  {/* Cherished Companions Image */}
+                  <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#738A6E]/40 bg-white/90 mb-3">
+                    <Image
+                      src="/Details/CherishedCompanions.png"
+                      alt="Cherished Companions attire guideline"
+                      fill
+                      className="object-contain"
+                      sizes="(min-width: 1024px) 700px, (min-width: 640px) 600px, 100vw"
+                      priority={false}
+                    />
+                  </div>
+                  
+                  <p className="text-[10px] sm:text-xs font-semibold text-[#738A6E] uppercase tracking-wide mb-2">
+                    Cherished Companions
                   </p>
-                  <div className="flex flex-wrap items-center justify-start gap-2 sm:gap-2.5">
-                    {/* Sage Green Colors */}
-                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#BCCFC0' }} />
-                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#8EA58B' }} />
-                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#738A6E' }} />
-                    {/* Beige Colors */}
-                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#F5F5DC' }} />
-                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#E6D5B8' }} />
-                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#D2B48C' }} />
+                  <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm pl-2">
+                    <div className="space-y-1">
+                      <p className="text-[#738A6E]">
+                        <span className="font-semibold">Gentlemen:</span> Suits/long sleeves - Sage green / Light turquoise
+                      </p>
+                      <div className="flex flex-wrap items-center gap-1.5 pl-4">
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#8EA58C' }} title="#8EA58C" />
+                        <span className="text-[10px] text-[#738A6E]/70">#8EA58C</span>
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#C4DAD2' }} title="#C4DAD2" />
+                        <span className="text-[10px] text-[#738A6E]/70">#C4DAD2</span>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-[#738A6E]">
+                        <span className="font-semibold">Ladies:</span> Long gown - Sage green / Mint green
+                      </p>
+                      <div className="flex flex-wrap items-center gap-1.5 pl-4">
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#8EA58C' }} title="#8EA58C" />
+                        <span className="text-[10px] text-[#738A6E]/70">#8EA58C</span>
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#BFCFBB' }} title="#BFCFBB" />
+                        <span className="text-[10px] text-[#738A6E]/70">#BFCFBB</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Guests */}
+                <div>
+                  {/* Guests Image */}
+                  <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#738A6E]/40 bg-white/90 mb-3">
+                    <Image
+                      src="/Details/Guests.png"
+                      alt="Guests attire guideline"
+                      fill
+                      className="object-contain"
+                      sizes="(min-width: 1024px) 700px, (min-width: 640px) 600px, 100vw"
+                      priority={false}
+                    />
+                  </div>
+                  
+                  <p className="text-[10px] sm:text-xs font-semibold text-[#738A6E] uppercase tracking-wide mb-2">
+                    Guests
+                  </p>
+                  <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm pl-2">
+                    <div className="space-y-1">
+                      <p className="text-[#738A6E]">
+                        <span className="font-semibold">Gentlemen:</span> Suits/long sleeves - Sage green / Mint green / Light turquoise
+                      </p>
+                      <div className="flex flex-wrap items-center gap-1.5 pl-4">
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#8EA58C' }} title="#8EA58C" />
+                        <span className="text-[10px] text-[#738A6E]/70">#8EA58C</span>
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#BFCFBB' }} title="#BFCFBB" />
+                        <span className="text-[10px] text-[#738A6E]/70">#BFCFBB</span>
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#C4DAD2' }} title="#C4DAD2" />
+                        <span className="text-[10px] text-[#738A6E]/70">#C4DAD2</span>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-[#738A6E]">
+                        <span className="font-semibold">Ladies:</span> Long gown - Sage green / Mint green / Light turquoise / Buttercream Bliss
+                      </p>
+                      <div className="flex flex-wrap items-center gap-1.5 pl-4">
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#8EA58C' }} title="#8EA58C" />
+                        <span className="text-[10px] text-[#738A6E]/70">#8EA58C</span>
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#BFCFBB' }} title="#BFCFBB" />
+                        <span className="text-[10px] text-[#738A6E]/70">#BFCFBB</span>
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#C4DAD2' }} title="#C4DAD2" />
+                        <span className="text-[10px] text-[#738A6E]/70">#C4DAD2</span>
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#738A6E]/20 shadow-sm" style={{ backgroundColor: '#FFF8BF' }} title="#FFF8BF" />
+                        <span className="text-[10px] text-[#738A6E]/70">#FFF8BF</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

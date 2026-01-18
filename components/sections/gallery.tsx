@@ -20,7 +20,7 @@ const windSong = WindSong({
   weight: "400",
 })
 
-const galleryHashtag = "#JohnAndVanessaWedding"
+const galleryHashtag = "#KrisAndMyneeWedding"
 
 const galleryItems = [
   { image: "/mobile-background/couple (1).webp", text: " " },

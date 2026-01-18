@@ -211,7 +211,7 @@ export function Details() {
           {/* Ceremony image */}
           <div className="relative h-64 sm:h-80 md:h-96 w-full">
             <Image
-              src="/Details/Caleruega Church, Caleruega Rd, Brgy. Kaylaway, Batulao Nasugbu, Batangas.png"
+              src="/Details/ceremony(1).jpg"
               alt={ceremonyLocationFormatted}
               fill
               className="object-cover"
@@ -288,7 +288,7 @@ export function Details() {
           {/* Reception image */}
           <div className="relative h-64 sm:h-80 md:h-96 w-full">
             <Image
-              src="/Details/Kayama Mountain Resort And Events Place, Sitio Kaytuyang, Brgy. Aga Nasugbu, Batangas.png"
+              src="/Details/reception(1).jpg"
               alt={receptionLocationFormatted}
               fill
               className="object-cover"
@@ -434,7 +434,7 @@ export function Details() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-1000 z-0" />
 
               <Image
-                src={showImageModal === "ceremony" ? "/Details/Caleruega Church, Caleruega Rd, Brgy. Kaylaway, Batulao Nasugbu, Batangas.png" : "/Details/Kayama Mountain Resort And Events Place, Sitio Kaytuyang, Brgy. Aga Nasugbu, Batangas.png"}
+                src={showImageModal === "ceremony" ? "/Details/ceremony(1).jpg" : "/Details/ceremony(1).jpg"}
                 alt={showImageModal === "ceremony" ? ceremonyLocationFormatted : receptionLocationFormatted}
                 fill
                 className="object-contain p-6 sm:p-8 md:p-10 transition-transform duration-700 group-hover:scale-105 z-10"
