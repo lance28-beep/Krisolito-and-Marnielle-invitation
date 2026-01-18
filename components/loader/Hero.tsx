@@ -79,8 +79,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             {/* Monogram Image */}
             <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44">
               <Image
-                src="/monogram/monogramnew.png"
-                alt="Denmark & Rizchelle Monogram"
+                src="/monogram/monogramNew.png"
+                alt="Krisolito & Marnielle Monogram"
                 fill
                 className="object-contain"
                 priority
