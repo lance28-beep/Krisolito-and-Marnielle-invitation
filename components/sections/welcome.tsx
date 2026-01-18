@@ -58,13 +58,13 @@ export function Welcome() {
                 className={`${cormorant.className} text-xs sm:text-sm md:text-base text-[#324D3E]/90 italic`}
                 style={{ textShadow: "0 1px 8px rgba(50,77,62,0.3)" }}
               >
-                &quot;And now these three remain: faith, hope and love. But the greatest of these is love.&quot;
+                &quot;He has made everything beautiful in its time&quot;
               </p>
               <p
                 className={`${cormorant.className} text-[0.65rem] sm:text-xs md:text-sm text-[#324D3E]/80 tracking-[0.2em] uppercase`}
                 style={{ textShadow: "0 1px 6px rgba(50,77,62,0.3)" }}
               >
-                1 Corinthians 13:13
+                Ecclesiastes 3:11
               </p>
             </div>
 

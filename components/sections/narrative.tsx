@@ -27,7 +27,7 @@ export function Narrative() {
       <div 
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(to bottom, #BCCFC0 0%, #8EA58B 100%)",
+          background: "linear-gradient(to bottom, #8EA58B 0%, #738A6E 100%)",
         }}
       />
 
