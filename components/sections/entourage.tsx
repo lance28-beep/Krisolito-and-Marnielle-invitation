@@ -43,6 +43,8 @@ const ROLE_CATEGORY_ORDER = [
   "Little Bride",
   "Ring Bearer",
   "Bible Bearer",
+  "Sign Bearer",
+  "Covenant & Pen Bearer",
   "Coin Bearer",
   "Flower Girls",
 ]
@@ -375,6 +377,50 @@ export function Entourage() {
                 
                 if (members.length === 0) return null
 
+                // Special handling for OFFICIATING MINISTER - display at the top
+                if (category === "OFFICIATING MINISTER") {
+                  return (
+                    <div key={category}>
+                      <TwoColumnLayout singleTitle="OFFICIATING MINISTER" centerContent={true}>
+                        {(() => {
+                          if (members.length <= 2) {
+                            return (
+                              <div className="col-span-full">
+                                <div className="max-w-sm mx-auto flex flex-col items-center gap-1 sm:gap-1.5 md:gap-2">
+                                  {members.map((member, idx) => (
+                                    <NameItem key={`officiating-${idx}-${member.Name}`} member={member} align="center" />
+                                  ))}
+                                </div>
+                              </div>
+                            )
+                          }
+                          // Default two-column sections: render row-by-row pairs
+                          const half = Math.ceil(members.length / 2)
+                          const left = members.slice(0, half)
+                          const right = members.slice(half)
+                          const maxLen = Math.max(left.length, right.length)
+                          const rows = []
+                          for (let i = 0; i < maxLen; i++) {
+                            const l = left[i]
+                            const r = right[i]
+                            rows.push(
+                              <React.Fragment key={`officiating-row-${i}`}>
+                                <div key={`officiating-cell-left-${i}`} className="px-1.5 sm:px-2 md:px-2.5">
+                                  {l ? <NameItem member={l} align="right" /> : <div className="py-0.5 sm:py-1 md:py-1.5" />}
+                                </div>
+                                <div key={`officiating-cell-right-${i}`} className="px-1.5 sm:px-2 md:px-2.5">
+                                  {r ? <NameItem member={r} align="left" /> : <div className="py-0.5 sm:py-1 md:py-1.5" />}
+                                </div>
+                              </React.Fragment>
+                            )
+                          }
+                          return rows
+                        })()}
+                      </TwoColumnLayout>
+                    </div>
+                  )
+                }
+
                 // Special handling for The Couple - display Bride and Groom side by side
                 if (category === "The Couple") {
                    const groom = members.find(m => m.RoleTitle?.toLowerCase().includes('groom'))
@@ -493,6 +539,52 @@ export function Entourage() {
                                   </div>
                                 </React.Fragment>
                               ))}
+                            </TwoColumnLayout>
+                          </div>
+                        )}
+                        
+                        {/* Cherished Companions section - displayed after Principal Sponsors */}
+                        {(grouped["Cherished Companions"] || []).length > 0 && (
+                          <div key="CherishedCompanions">
+                            <div className="flex justify-center py-1.5 sm:py-2 md:py-2.5 mb-2 sm:mb-2.5 md:mb-3">
+                              <div className="w-full max-w-md h-px bg-gradient-to-r from-transparent via-[#738A6E]/30 to-transparent"></div>
+                            </div>
+                            <TwoColumnLayout singleTitle="Cherished Companions" centerContent={true}>
+                              {(() => {
+                                const members = grouped["Cherished Companions"] || []
+                                if (members.length <= 2) {
+                                  return (
+                                    <div className="col-span-full">
+                                      <div className="max-w-sm mx-auto flex flex-col items-center gap-1 sm:gap-1.5 md:gap-2">
+                                        {members.map((member, idx) => (
+                                          <NameItem key={`cherished-${idx}-${member.Name}`} member={member} align="center" showRole={false} />
+                                        ))}
+                                      </div>
+                                    </div>
+                                  )
+                                }
+                                // Pair row-by-row for Cherished Companions
+                                const half = Math.ceil(members.length / 2)
+                                const left = members.slice(0, half)
+                                const right = members.slice(half)
+                                const maxLen = Math.max(left.length, right.length)
+                                const rows = []
+                                for (let i = 0; i < maxLen; i++) {
+                                  const l = left[i]
+                                  const r = right[i]
+                                  rows.push(
+                                    <React.Fragment key={`cherished-row-${i}`}>
+                                      <div key={`cherished-cell-left-${i}`} className="px-1.5 sm:px-2 md:px-2.5">
+                                        {l ? <NameItem member={l} align="right" showRole={false} /> : <div className="py-0.5 sm:py-1 md:py-1.5" />}
+                                      </div>
+                                      <div key={`cherished-cell-right-${i}`} className="px-1.5 sm:px-2 md:px-2.5">
+                                        {r ? <NameItem member={r} align="left" showRole={false} /> : <div className="py-0.5 sm:py-1 md:py-1.5" />}
+                                      </div>
+                                    </React.Fragment>
+                                  )
+                                }
+                                return rows
+                              })()}
                             </TwoColumnLayout>
                           </div>
                         )}
@@ -760,6 +852,8 @@ export function Entourage() {
                           "Ring Bearer",
                           "Coin Bearer",
                           "Bible Bearer",
+                          "Sign Bearer",
+                          "Covenant & Pen Bearer",
                           "Flower Girls",
                           "Presider",
                         ])
@@ -818,7 +912,7 @@ export function Entourage() {
               })}
               
               {/* Display any other categories not in the ordered list */}
-              {Object.keys(grouped).filter(cat => !ROLE_CATEGORY_ORDER.includes(cat) && cat !== "Other").map((category) => {
+              {Object.keys(grouped).filter(cat => !ROLE_CATEGORY_ORDER.includes(cat) && cat !== "Other" && cat !== "Cherished Companions").map((category) => {
                 const members = grouped[category]
                 return (
                   <div key={category}>
