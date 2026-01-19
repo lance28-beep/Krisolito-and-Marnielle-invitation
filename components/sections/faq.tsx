@@ -40,7 +40,12 @@ const faqItems: FAQItem[] = [
   {
     question: "Can I bring a plus one or additional guests?",
     answer:
-      "Each invitation includes a specific number of reserved seats. Please check your invitation details in the RSVP section. If you need to request additional seats, you can use the 'Request to Join' feature, and we'll do our best to accommodate based on availability.",
+      "We would love to celebrate with everyone, but because of space and planning limitations, we’re unable to extend additional plus ones beyond those named on the invitation. Thank you so much for understanding.",
+  },
+  {
+    question: "Will children be allowed at the wedding?",
+    answer:
+      "With thoughtful planning and limited capacity, we have decided to celebrate our wedding as an adults-only event. We appreciate your understanding and prayers as we prepare for this special day.",
   },
   {
     question: "Is there a dress code?",

@@ -651,13 +651,14 @@ export function Entourage() {
                             <div className="w-full max-w-md h-px bg-gradient-to-r from-transparent via-[#738A6E]/30 to-transparent"></div>
                           </div>
                         )}
-                        <TwoColumnLayout leftTitle="Maid of Honor" rightTitle="Best Man">
+                        {/* Per request: Best Man on the left, Maid/Matron of Honor on the right */}
+                        <TwoColumnLayout leftTitle="Best Man" rightTitle="Maid of Honor">
                           {(() => {
                             const maxLen = Math.max(bestMan.length, maidOfHonor.length)
                             const rows = []
                             for (let i = 0; i < maxLen; i++) {
-                              const left = maidOfHonor[i]
-                              const right = bestMan[i]
+                              const left = bestMan[i]
+                              const right = maidOfHonor[i]
                               rows.push(
                                 <React.Fragment key={`honor-row-${i}`}>
                                   <div key={`maid-cell-${i}`} className="px-1.5 sm:px-2 md:px-2.5">
